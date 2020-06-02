@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button } from "antd";
 import "antd/dist/antd.css";
-const AntdModal = () => {
+const AntdModal = ({ centered }) => {
   const [visible, setVisible] = useState(false);
 
   function showModal() {
@@ -26,10 +26,9 @@ const AntdModal = () => {
         visible={visible}
         onOk={handleOk}
         onCancel={handleCancel}
+        centered={centered}
       >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <p>אלירן יא הומו</p>
       </Modal>
     </div>
   );
